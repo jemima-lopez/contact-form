@@ -13,38 +13,40 @@
 
 </head>
 <body>
+  <form id="contact-form" novalidate>
 
-  Contact Us
+      <h1>Contact Us</h1>
 
-  First Name
-  This field is required
+      <label>Name</label> 
+      <input type="text" name="name" required>
 
-  Last Name
-  This field is required
+      <label>Last Name</label>
+      <input type="text" name="last-name" required>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
+      <label>Email Address</label>
+      <input type="email" name="email" required>
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+      <label>Query Type</label>
+      General Enquiry
+      Support Request
+      Please select a query type
 
-  Message
-  This field is required
+      <textarea>Message</textarea>
+      This field is required
 
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
+      I consent to being contacted by the team
+      To submit this form, please consent to being contacted
 
-  Submit
+      <button type="submit">Submit</button>
 
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
+      Message Sent!
+      Thanks for completing the form. We'll be in touch soon!
+  </form>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src=".main.js"></script>
 </body>
 </html>
