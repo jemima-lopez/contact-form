@@ -30,14 +30,16 @@
       <br>
 
       <label>Query Type</label>
-      <input type="radio" id="general" name="General Enquiry">
-      General Enquiry
-      Support Request
-      Please select a query type
-
+        <div class="radio-group">
+          <input type="radio" id="general" name="query-type" value="general">
+          <label for="general">General Enquiry</label> 
+          <input type="radio" id="support" name="query-type" value="support">
+          <label for="support">Support Request</label>
+        </div>
+      <br>
       <label>Message</label>
-      <textarea>Message</textarea>
-      This field is required
+      <textarea></textarea>
+      <br>
 
       <div>
         <input type="checkbox" id="consent" name="consent" required>
