@@ -14,24 +14,27 @@
 </head>
 <body>
   <form id="contact-form" novalidate>
-
+    
       <h1>Contact Us</h1>
 
-      <label>Name</label> 
-      <input type="text" name="name" required>
+        <div class="form-header">
+          <div class="radio-container">
+            <label>Name</label> 
+            <input type="text" name="name" required>
+          </div>
+          <div class="radio-container">
+            <label>Last Name</label>
+            <input type="text" name="last-name" required>
+        </div>
+      </div>
       <br>
-
-      <label>Last Name</label>
-      <input type="text" name="last-name" required>
-      <br>
-
       <label>Email Address</label>
       <input type="email" name="email" required>
       <br>
 
       <label>Query Type</label>
         <div class="radio-group">
-          <input type="radio" id="general" name="query-type" value="general">
+          <input type="radio" id="general" name="query-type" value="general" checked>
           <label for="general">General Enquiry</label> 
           <input type="radio" id="support" name="query-type" value="support">
           <label for="support">Support Request</label>

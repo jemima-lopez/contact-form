@@ -30,7 +30,8 @@ body {
     height: 100vh;
 }
 
-form {
+
+#contact-form {
     background-color: var(--white);
     padding: 2rem;
     border-radius: 8px;
@@ -41,8 +42,22 @@ form {
     flex-direction: column;
 }
 
+form h1 {
+    font-family: karla-regular, sans-serif;
+    color: var(--grey-900);
+    margin-bottom: 0.5rem;
+}
 
+.form-header {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
 
+.radio-container {
+    display: flex;
+
+}
 
 
 
