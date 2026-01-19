@@ -18,11 +18,11 @@
       <h1>Contact Us</h1>
 
         <div class="form-header">
-          <div class="radio-container">
+          <div class="container">
             <label>First Name</label> 
             <input type="text" name="name" required>
           </div>
-          <div class="radio-container">
+          <div class="container">
             <label>Last Name</label>
             <input type="text" name="last-name" required>
         </div>
@@ -34,10 +34,14 @@
 
       <label>Query Type</label>
         <div class="radio-group">
-          <input type="radio" id="general" name="query-type" value="general" checked>
-          <label for="general">General Enquiry</label> 
-          <input type="radio" id="support" name="query-type" value="support">
-          <label for="support">Support Request</label>
+          <div class="type-radio">
+            <input type="radio" id="general" name="query-type" value="general" checked>
+            <label for="general">General Enquiry</label> 
+          </div>
+          <div class="type-radio">
+            <input type="radio" id="support" name="query-type" value="support">
+            <label for="support">Support Request</label>
+          </div>
         </div>
       <br>
       <label>Message</label>

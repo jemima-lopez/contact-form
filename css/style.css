@@ -54,25 +54,31 @@ form h1 {
     gap: 1rem;
 }
 
-.radio-container {
+.container {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 
-.radio-container label {
+.container label {
     margin-bottom: 0.5rem;
     color: var(--grey-900);
     font-size: 14px;
 }
 
-.radio-container input {
+.container input {
     padding: 0.5rem;
     border: 1px solid var(--grey-500);
     border-radius: 4px;
     font-size: 14px;
     font-family: karla-regular, sans-serif;
     color: var(--grey-900);
+}
+
+.container input:focus {
+    outline: none;
+    border-color: var(--green-600);
+    box-shadow: 0 0 0 2px var(--green-200);
 }
 
 #contact-form label {
@@ -92,10 +98,32 @@ input[type="email"] {
     box-sizing: border-box;
 }
 
+input[type="email"]:focus {
+    outline: none;
+    border-color: var(--green-600);
+    box-shadow: 0 0 0 2px var(--green-200);
+}
 
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
 
-
-
+.type-radio {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid var(--grey-500);
+    border-radius: 4px;
+    border-color: var(--green-600);
+}
+.type-radio input {
+    margin-top: 3px;
+    accent-color: var(--green-600);
+}
 
 
 
