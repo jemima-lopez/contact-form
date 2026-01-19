@@ -75,6 +75,23 @@ form h1 {
     color: var(--grey-900);
 }
 
+#contact-form label {
+    margin-bottom: 0.5rem;
+    color: var(--grey-900);
+    font-size: 14px;
+}
+
+input[type="email"] {
+    padding: 0.5rem;
+    border: 1px solid var(--grey-500);
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: karla-regular, sans-serif;
+    color: var(--grey-900);
+    width: 100%;
+    box-sizing: border-box;
+}
+
 
 
 
