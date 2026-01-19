@@ -125,6 +125,25 @@ input[type="email"]:focus {
     accent-color: var(--green-600);
 }
 
+textarea {
+    padding: 0.5rem;
+    border: 1px solid var(--grey-500);
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: karla-regular, sans-serif;
+    color: var(--grey-900);
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 100px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--green-600);
+    box-shadow: 0 0 0 2px var(--green-200);
+}
+
 
 
 
