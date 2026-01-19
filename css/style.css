@@ -144,12 +144,23 @@ textarea:focus {
     box-shadow: 0 0 0 2px var(--green-200);
 }
 
+.check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
 
+input[type="checkbox"] {
+    accent-color: var(--green-600);  
+}
 
-
-
-
-
+.check label {
+    font-size: 14px;
+    color: var(--grey-900);
+    font-family: karla-regular, sans-serif;
+}
 
 
 
