@@ -173,17 +173,11 @@ button{
     font-family: karla-bold, sans-serif;
     cursor: pointer;
     margin-top: 1rem;
+} 
+
+button:hover {
+    background-color: hsl(169, 82%, 22%);
 }
-
-
-
-
-
-
-
-
-
-
 
     .attribution { font-size: 11px; text-align: center; margin-top: 4rem; }
     .attribution a { color: hsl(228, 45%, 44%); }
