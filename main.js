@@ -7,9 +7,24 @@ const submit = document.getElementById('submit');
 
 submit.addEventListener('click', function(event) {
     event.preventDefault();
-    if (named.value && lastName.value && email.value && consent.checked && message.value) {           
-        alert("Message Sent!\nThanks for completing the form. We'll be in touch soon!");
-    } else {
-        alert("Please fill out all required fields and consent to being contacted.");
-    }  
+    clearErrors();
+
+    let hasError = false;
+
+    if (named.value.trim() === '') {
+        showError(named, 'First name is required.');
+        hasError = true;
+    }
+    if (lastName.value.trim() === '') {
+        showError(lastName, 'Last name is required.');
+        hasError = true;
+    }
+    if (email.value.trim() === '') {
+        showError(email, 'Email is required.');
+        hasError = true;
+    } else if (!validateEmail(email.value.trim())) {
+        showError(email, 'Please enter a valid email address.');
+        hasError = true;
+    }
 });         
+
