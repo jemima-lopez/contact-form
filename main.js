@@ -25,6 +25,20 @@ submit.addEventListener('click', function(event) {
     } else if (!validateEmail(email.value.trim())) {
         showError(email, 'Please enter a valid email address.');
         hasError = true;
+    } 
+    if (!consent.checked) {
+        showError(consent, 'You must consent to being contacted.');
+        hasError = true;
+    }
+    if (!hasError) {
+        form.submit();
     }
 });         
 
+function showError(input, message) {
+
+    const error = document.createElement('div');
+    error.className = 'error-message';
+    error.innerText = message;
+    input.parentNode.insertBefore(error, input.nextSibling);
+}
