@@ -161,6 +161,7 @@ input[type="checkbox"] {
     font-size: 14px;
     color: var(--grey-900);
     font-family: karla-regular, sans-serif;
+    margin-top: 0.32rem;
 }
 
 button{
@@ -178,9 +179,17 @@ button{
 
 button:hover {
     background-color: hsl(169, 82%, 22%);
+    border: none;
 }
 
-    .attribution { font-size: 11px; text-align: center; margin-top: 4rem; }
+.error-message {
+    color: var(--red);
+    font-size: 14px;
+    margin-top: 0.25rem;
+}
+
+.asterisk { color: var(--green-600); }
+
+    .attribution { font-size: 11px; text-align: center; margin-top: 2rem; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
-    
