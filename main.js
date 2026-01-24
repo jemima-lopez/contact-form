@@ -1,13 +1,14 @@
 
+
 const named = document.getElementById('named');
 const lastName = document.getElementById('last-name');
 const email = document.getElementById('email');
 const consent = document.getElementById('consent');
-const submit = document.getElementById('submit');
+const form = document.getElementById('contact-form');
 
-submit.addEventListener('click', function(event) {
+form.addEventListener('submit', function(event) {
     event.preventDefault();
-    clearErrors();
+    clearError();
 
     let hasError = false;
 
@@ -22,10 +23,14 @@ submit.addEventListener('click', function(event) {
     if (email.value.trim() === '') {
         showError(email, 'Email is required.');
         hasError = true;
-    } else if (!validateEmail(email.value.trim())) {
+    } else if (!validateEmail(email.value)) {
         showError(email, 'Please enter a valid email address.');
         hasError = true;
     } 
+    if (message.value.trim() === '') {
+        showError(message, 'Message is required.');
+        hasError = true;
+    }
     if (!consent.checked) {
         showError(consent, 'You must consent to being contacted.');
         hasError = true;
@@ -41,4 +46,13 @@ function showError(input, message) {
     error.className = 'error-message';
     error.innerText = message;
     input.parentNode.insertBefore(error, input.nextSibling);
+}
+
+function clearError() {
+    const errors = document.querySelectorAll('.error-message');
+    errors.forEach(error => error.remove());
+}
+
+function validateEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
