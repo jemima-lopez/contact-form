@@ -5,8 +5,9 @@ const lastName = document.getElementById('last-name');
 const email = document.getElementById('email');
 const consent = document.getElementById('consent');
 const form = document.getElementById('contact-form');
+const message = document.getElementById('message');
 
-form.addEventListener('submit', function(event) {
+clicked.addEventListener('click', function(event) {
     event.preventDefault();
     clearError();
 
@@ -36,7 +37,7 @@ form.addEventListener('submit', function(event) {
         hasError = true;
     }
     if (!hasError) {
-        form.submit();
+        form.submit(alert(`Succesfully submitted!`));
     }
 });         
 
