@@ -1,24 +1,32 @@
 @media screen and (max-width: 768px) {
-    contact-form {
+body {
         width: 100%;
         height: auto;
-        padding: 2rem;
         display: flex;
-        flex-direction: column;    
+        flex-direction: column; 
+        padding: 2rem 0 2rem 0;   
     }
 
 .form-header {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+}
+
+.container {
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .radio-group {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
+.type-radio {
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
 
 
 }
