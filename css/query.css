@@ -6,6 +6,9 @@ body {
         flex-direction: column; 
         padding: 2rem 0 2rem 0;   
     }
+#contact-form {
+    width: 75%;
+}
 
 .form-header {
     display: flex;
@@ -20,7 +23,7 @@ body {
 .radio-group {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 94%;
 }
 
 .type-radio {
